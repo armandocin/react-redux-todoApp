@@ -1,0 +1,23 @@
+body {
+  margin: 30px; 
+}
+
+ol, ul {
+  padding: 20px 0 20px 50px;
+}
+
+
+li {
+	margin-top: .5em;
+}
+
+.btn-rm {
+	margin-left: 8px;
+	padding: 0 .1em .1em .1em;
+    font-size: 75%;
+    border-radius: 20px;
+    width:1.5em;
+    height: 1.5em;
+    border: solid 5px '#d43f3a';
+    font-weight: bold;
+}
