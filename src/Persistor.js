@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { loadState, saveState } from './handlePersistance';
+import { saveState } from './handlePersistance';
 import App from './App'
 
 let Persistor = ({todos}) => {

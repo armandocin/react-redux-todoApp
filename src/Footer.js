@@ -1,6 +1,5 @@
 import React from 'react';
 import FilterBtn from './FilterBtn';
-import { connect } from 'react-redux';
 
 const Footer = () => {
 	return (//filter will be passed to ownProps
