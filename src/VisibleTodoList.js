@@ -46,20 +46,20 @@ const TodoList = ({todos, onToggle, onRemove}) => {
 
 	return (<ul>{list}</ul>);
 }
-const mapStateToTodoListProps = (state) => {
+const mapStateToProps = (state) => {
 	return {
 		todos: handleChangeFilter(state.todos, state.filter)
 	};
 };
-const mapDispatchToTodoListProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
 	return {
 		onToggle: (id) => dispatch(toggleTodo(id)),
 		onRemove: (id) => dispatch(removeTodo(id))
 	};
 };
 const VisibleTodoList = connect(
-	mapStateToTodoListProps,
-	mapDispatchToTodoListProps
+	mapStateToProps,
+	mapDispatchToProps
 )(TodoList);
 
 export default VisibleTodoList;

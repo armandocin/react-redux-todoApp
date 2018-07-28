@@ -16,16 +16,16 @@ const Btn = ({active, children, onClick}) => {
 		</button>
 	);
 }
-const mapStateToFilterBtnProps = (state, ownProps) => {
+const mapStateToProps = (state, ownProps) => {
 	return {
 		active: state.filter === ownProps.filter
 	};
 };
-const mapDispatchToFilterBtnProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
 	return {
 		onClick: () => dispatch(setFilter(ownProps.filter))
 	};
 };
-const FilterBtn = connect(mapStateToFilterBtnProps, mapDispatchToFilterBtnProps)(Btn);
+const FilterBtn = connect(mapStateToProps, mapDispatchToProps)(Btn);
 
 export default FilterBtn;
