@@ -16,7 +16,8 @@ const handleChangeFilter = (todos, filter) => {
 
 const Todo = ({todo, toggle, onRemove}) => (
 		<div className="todo-div">
-			<li key={todo.id} 
+			<li key={todo.id}
+				className="col-sm-3"
 				onClick = {toggle}
 				style = {
 					{
