@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { saveState } from './handlePersistance';
-import App from './App'
 
-let Persistor = ({todos}) => {
+let Persistor = ({todos, children}) => {
 	
 	saveState({
 		todos: todos
 	}, 'tmp');
-	return <App />;
+	return children;
 };
 
 const mapStateToProps = (state) => {
